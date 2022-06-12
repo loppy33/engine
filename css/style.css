@@ -20,8 +20,8 @@
 .mouse-parallax__background {
     position: absolute;
     z-index: -1;
-    width: 120%;
-    height: 120%;
+    width: 150%;
+    height: 150%;
     background-repeat: no-repeat;
     background-size: cover;
     filter: blur(10px);
