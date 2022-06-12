@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mouse-parallax {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.mouse-parallax__background {
+    position: absolute;
+    z-index: -1;
+    width: 110%;
+    height: 110%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(10px);
+    transition: 0.1s;
+}
+
+a {
+    color: #fff;
+    font-size: 35px;
+}
+
+.menu {
+    text-align: center;
+}
+
+.btns {
+    top: 0;
+    background-color: #ffefef73;
+    position: absolute;
+    width: 550px;
+    height: 300px;
+    border-radius: 50px;
+    transition: 0.3s;
+    transform: translate(0%, -100%);
+    word-spacing: 0px;
+
+
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 225px;
+    transition: 0.3s;
+    letter-spacing: 5px;
+    margin-left: 17%;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.block {
+    background-color: #b4b4b473;
+    width: 900px;
+    height: 450px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.avatar {
+    position: absolute;
+    border-radius: 300px;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin-top: -450px;
+    transition: 0.6s;
+}
+
+.avatar:hover {
+    transform: scale(1.05);
+}
+
+.name {
+    text-align: center;
+    margin-top: 150px;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
+}
+
+@keyframes change-color {
+    0% {
+        filter: drop-shadow(0px 0px 5px rgba(18, 32, 216, 0.5));
+    }
+
+    20% {
+        filter: drop-shadow(0px 0px 5px rgba(233, 233, 233, 0.5));
+    }
+
+    50% {
+        filter: drop-shadow(0px 0px 5px rgba(18, 32, 216, 0.5));
+    }
+
+    80% {
+        filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.5));
+    }
+
+    100% {
+        filter: drop-shadow(0px 0px 5px rgba(18, 32, 216, 0.5));
+    }
+}
+
+hr {
+    animation: change-color 10s infinite;
+    width: 50%;
+    margin: auto;
+}
+
+.network {
+    width: 50px;
+    margin-left: 50px;
+    margin-top: 25px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.network:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 15px #ddd);
+}
+
+/* Крестик начало */
+
+
+.container {
+    margin-left: -1.5%;
+    position: absolute;
+    top: 0;
+    margin-top: 24px;
+
+}
+
+.hamburger {
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    cursor: pointer;
+
+}
+
+.visuallyHidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+.hamburger .bar {
+    padding: 0;
+    width: 30px;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+}
+
+.bar1 {
+    top: 0;
+}
+
+.bar2,
+.bar3 {
+    top: 13.5px;
+}
+
+.bar3 {
+    right: 0;
+}
+
+.bar4 {
+    bottom: 0;
+}
+
+.checkbox2:checked+label>.hamburger2>.bar1 {
+    transform: translateX(40px);
+    background-color: transparent;
+}
+
+.checkbox2:checked+label>.hamburger2>.bar2 {
+    transform: rotate(45deg);
+}
+
+.checkbox2:checked+label>.hamburger2>.bar3 {
+    transform: rotate(-45deg);
+}
+
+.checkbox2:checked+label>.hamburger2>.bar4 {
+    transform: translateX(-40px);
+    background-color: transparent;
+}
+
+/* Крестик конец */
+
+
+/* Гильдии начало*/
+
+.back {
+    opacity: 0.8;
+    font-size: 80px;
+    position: absolute;
+    right: 0;
+    margin-right: 15px;
+    transition: 0.3s;
+}
+
+.back:hover {
+    opacity: 1;
+    transform: scale(1.10);
+    filter: none;
+}
+
+.guilds_div {
+    display: none;
+    max-width: 1300px;
+    max-height: 880px;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(180, 180, 180, 0.45);
+    border-radius: 15px;
+    z-index: 3;
+    text-align: center;
+    overflow-y: scroll;
+    transition: 1s;
+
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 15px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ddd;
+
+}
+
+.guilds_title {
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+}
+
+.guilds {
+    padding-top: 10px;
+    display: inline-block;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    width: 260px;
+    text-align: center;
+    border-radius: 25px;
+    margin: 10px;
+    transition: 0.3s
+}
+
+.guild_avatar {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 250px;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    transition: 0.3s
+}
+
+.guilds:hover,
+.guild_avatar:hover {
+    transform: scale(1.05);
+    filter: none;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.guild_name {
+    margin: auto;
+    margin-top: -15px;
+}
+
+@media (max-width: 600px) {
+
+    .block {
+        margin-top: 150px;
+        width: 300px;
+        height: 350px;
+
+    }
+
+    .avatar {
+        height: 200px;
+        width: 200px;
+        margin-top: -200px;
+    }
+
+    .name {
+        text-align: center;
+        margin-top: 100px;
+        font-size: 40px;
+        color: rgb(255, 255, 255);
+        filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
+    }
+
+    hr {
+        width: 50%;
+        margin: auto;
+        filter: drop-shadow(0px 4px 4px rgba(153, 19, 146, 0.25));
+    }
+
+    .network {
+        width: 50px;
+        margin-left: 10px;
+        margin-top: 25px;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .btns {
+        width: 350px;
+    }
+
+    .btn {
+        letter-spacing: 3px;
+        margin-left: 11.5%;
+    }
+
+    .back {
+        font-size: 65px;
+        margin-right: 10px;
+    }
+
+
+}
