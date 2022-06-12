@@ -101,7 +101,7 @@ let renderDescription = async () => {
     for (let i = 0; i < name.length; i++) {
         let cursor = ((i % 20 < 12) ? '|' : '');
         letter = name[i];
-        if (Math.random() > .57) {
+        if (Math.random() > .70) {
             element.innerText = text + letters[Math.trunc(Math.random() * letters.length)] + cursor;
             await sleep(Math.trunc(Math.random() * 100 + 300));
             element.innerText = text + cursor;
