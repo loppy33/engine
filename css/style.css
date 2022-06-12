@@ -20,8 +20,8 @@
 .mouse-parallax__background {
     position: absolute;
     z-index: -1;
-    width: 110%;
-    height: 110%;
+    width: 120%;
+    height: 120%;
     background-repeat: no-repeat;
     background-size: cover;
     filter: blur(10px);
@@ -80,10 +80,12 @@ a {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     margin-top: -450px;
     transition: 0.6s;
+    
 }
 
 .avatar:hover {
     transform: scale(1.05);
+    filter: invert(75%);
 }
 
 .name {
@@ -312,6 +314,13 @@ hr {
 
 @media (max-width: 600px) {
 
+    .mouse-parallax__background {
+
+        width: 150%;
+        height: 150%;
+ 
+    }
+    
     .block {
         margin-top: 150px;
         width: 300px;

@@ -23,6 +23,8 @@ let back = document.getElementById('back')
 
 let background = document.getElementById('background')
 
+let element = document.getElementById('name');
+
 hanburger.onclick = function () {
 
     if (btns.style.transform == 'translate(0%, -70%)')
@@ -88,3 +90,33 @@ function Interval() {
         }, 15 * 1000)
 }
 Interval()
+
+let name = 'walpuper\n#2663'
+
+
+let renderDescription = async () => {
+    let text = '';
+    let letter = '';
+    let letters = 'qwertyuiopasdfghjklzxcvb456436346453523nmQWERTYUIOPASDFGHJKLZXCVBNM8345958325'
+    for (let i = 0; i < name.length; i++) {
+        let cursor = ((i % 20 < 12) ? '|' : '');
+        letter = name[i];
+        if (Math.random() > .57) {
+            element.innerText = text + letters[Math.trunc(Math.random() * letters.length)] + cursor;
+            await sleep(Math.trunc(Math.random() * 100 + 300));
+            element.innerText = text + cursor;
+            await sleep(Math.trunc(Math.random() * 200 + 200));
+        }
+        text += letter;
+        element.innerText = text + cursor;
+        await sleep(Math.trunc(Math.random() * 100 + 50))
+        if (letter == '.') await sleep(Math.trunc(Math.random() * 100 + 400))
+    }
+    await sleep(Math.trunc(Math.random() * 100 + 50))
+    element.innerText = name
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+}
+
+renderDescription()
