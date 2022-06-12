@@ -6,6 +6,7 @@
     text-decoration: none;
     margin: 0;
     padding: 0;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .mouse-parallax {
@@ -316,13 +317,6 @@ hr {
 
 @media (max-width: 600px) {
 
-    .mouse-parallax__background {
-
-        width: 150%;
-        height: 150%;
- 
-    }
-    
     .block {
         margin-top: 150px;
         width: 300px;
