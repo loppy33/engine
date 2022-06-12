@@ -78,7 +78,7 @@ function moveCards() {
 
 function changeBackground() {
     random = Math.floor(Math.random() * 5) + 1
-    background.style.backgroundImage = 'url("../img/' + random + '.png")'
+    background.style.backgroundImage = 'url("img/' + random + '.png")'
 }
 changeBackground()
 
