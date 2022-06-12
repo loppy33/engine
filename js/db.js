@@ -12,7 +12,7 @@ guild3.gif
 --
 EITHER
 &&
-https://discord.gg/invite/akity
+https://discord.gg/eBf88cHJpF
 --
 guild1.gif
 --
