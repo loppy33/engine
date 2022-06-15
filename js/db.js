@@ -6,12 +6,6 @@ guild2.png
 --
 Anko
 &&
-https://discord.gg/invite/either
---
-guild3.gif
---
-EITHER
-&&
 https://discord.gg/eBf88cHJpF
 --
 guild1.gif
