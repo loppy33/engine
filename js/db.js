@@ -6,24 +6,17 @@ guild2.png
 --
 Anko
 &&
-https://discord.gg/eBf88cHJpF
+https://discord.gg/aAQVuUpgba
 --
 guild1.gif
 --
-Eternity
-&&
-https://discord.gg/Ugx7hKCatU
---
-guild4.png
---
-Mitsuki
+Akity
 &&
 https://discord.gg/Akcdva53xX
 --
 guild5.gif
 --
 Kyoto
-
 `;
 
 export {db} 
