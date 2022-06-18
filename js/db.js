@@ -17,6 +17,12 @@ https://discord.gg/Akcdva53xX
 guild5.gif
 --
 Kyoto
+&&
+https://discord.gg/invite/akame
+--
+guild6.gif
+--
+Akame
 `;
 
 export {db} 
