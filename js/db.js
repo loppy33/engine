@@ -23,12 +23,6 @@ https://discord.gg/invite/akame
 guild6.gif
 --
 Akame
-&&
-https://discord.gg/kHuPHMUqCZ
---
-guild7.gif
---
-．match¹
 `;
 
 export {db} 
