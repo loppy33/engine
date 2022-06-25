@@ -23,6 +23,12 @@ https://discord.gg/invite/akame
 guild6.gif
 --
 Akame
+&&
+https://discord.gg/invite/ogla
+--
+guild8.png
+--
+ogla
 `;
 
 export {db} 
