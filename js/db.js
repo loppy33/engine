@@ -29,6 +29,12 @@ https://discord.gg/invite/ogla
 guild8.png
 --
 ogla
+&&
+https://discord.gg/invite/hokai
+--
+guild8.gif
+--
+Hokai
 `;
 
 export {db} 
