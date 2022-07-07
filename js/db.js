@@ -23,12 +23,6 @@ https://discord.gg/invite/akame
 guild6.gif
 --
 Akame
-&&
-https://discord.gg/invite/hokai
---
-guild8.gif
---
-Hokai
 `;
 
 export {db} 
